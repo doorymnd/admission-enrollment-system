@@ -1,0 +1,113 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0f8f3f;
+    padding: 5px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 80px; /* adjust as needed */
+    cursor: pointer;
+}
+
+
+.logo {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #0b6e31;
+}
+
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(15, 143, 63, 0.85), rgba(15, 143, 63, 0.85)),
+                url('/img/school.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #0f8f3f;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #0f8f3f;
+    margin-bottom: 20px;
+}
+
+.light-bg {
+    background-color: #f4f9f6;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0f8f3f;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}

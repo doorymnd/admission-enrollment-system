@@ -1,0 +1,162 @@
+/* Badge base */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Active badge */
+.badge-success {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #b7e0c3;
+}
+
+/* Disabled badge */
+.badge-danger {
+    background-color: #fdecea;
+    color: #b02a37;
+    border: 1px solid #f5c2c7;
+}
+
+/* Optional: unknown / fallback */
+.badge-secondary {
+    background-color: #e9ecef;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+
+
+
+.progress-wrapper {
+    width: 100%;
+    height: 26px;
+    background: #e9ecef;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 50px;
+    background: linear-gradient(
+        45deg,
+        #198754 25%,
+        #28a745 25%,
+        #28a745 50%,
+        #198754 50%,
+        #198754 75%,
+        #28a745 75%
+    );
+    background-size: 40px 40px;
+    animation: moveStripes 1s linear infinite;
+    transition: width .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes moveStripes {
+    from { background-position: 0 0; }
+    to { background-position: 40px 0; }
+}
+
+.progress-text {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
+.drop-zone {
+    border: 2px dashed #198754;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    background: #f8f9fa;
+}
+
+.drop-zone:hover {
+    background: #e9f7ef;
+}
+
+.drop-zone.dragover {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.drop-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.drop-subtext {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.file-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #198754;
+}
+
+
+
+
+
+.btn-all { background:black;color:white;padding:5px 10px;border-radius:3px;text-decoration:none; }
+.btn-all:hover{ background-color: rgb(66, 66, 66); }
+
+.btn-pending { background:orange;color:white;padding:5px 10px;border-radius:3px;text-decoration:none; }
+.btn-pending:hover{ background-color: rgb(247, 187, 75) }
+
+.btn-approved { background:#1e7e34;color:white;padding:5px 10px;border-radius:3px;text-decoration:none; }
+.btn-approved:hover{ background-color: #0a531b; }
+
+.btn-released { background:blue;color:white;padding:5px 10px;border-radius:3px;text-decoration:none; }
+.btn-released:hover{ background-color: rgb(14, 14, 151) ; }
+
+.btn-approve {
+    background:#1e7e34;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius:3px;
+    cursor: pointer;
+}
+.btn-approve:hover{
+    background-color: #0a531b;
+}
+
+.btn-release {
+    background:rgb(25, 25, 233);
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius:3px;
+    cursor: pointer;
+}
+.btn-release:hover{
+    background-color: rgb(14, 14, 151) ;
+}
+
+.subject-header {
+    display: flex;
+    justify-content: space-between; /* 🔥 pushes button to right */
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px;
+    margin-top: 10px;
+}

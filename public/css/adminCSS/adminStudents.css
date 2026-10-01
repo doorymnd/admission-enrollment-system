@@ -1,0 +1,343 @@
+/* ===== Filter Form (No Background Box) ===== */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs & Select */
+.filter-form input[type="text"],
+.filter-form select {
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 180px;
+    outline: none;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+/* Focus Effect */
+.filter-form input[type="text"]:focus,
+.filter-form select:focus {
+    border-color: #2e7d32; /* green */
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+/* Button */
+.filter-form button {
+    padding: 10px 18px;
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button Hover */
+.filter-form button:hover {
+    background-color: #1b5e20;
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-form input,
+    .filter-form select,
+    .filter-form button {
+        width: 100%;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+}
+
+
+
+.btn-upload {
+    background: #2e7d32;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: red;
+}
+
+
+
+
+
+.header-inline h1 {
+    margin-bottom: 5px;
+    color: #0b3d0b; /* dark green */
+}
+
+.header-inline p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.p-button-wrapper {
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap; /* keeps buttons responsive on small screens */
+    padding-left: 720px;
+}
+
+.p-editbutton-wrapper {
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap; /* keeps buttons responsive on small screens */
+    padding-left: 770px;
+}
+
+.btn-view-approved {
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #198754; /* dark green */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.3s;
+    display: inline-flex;
+    width: auto !important; /* critical fix */
+    margin: 0 !important;   /* remove inherited margins */
+}
+
+/* Tiny spacing ONLY if needed */
+.btn-action + .btn-action {
+    margin-left: 3px;
+}
+
+
+.btn-view-approved:hover {
+    background-color: #146c43; /* darker green on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input, select, button {
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+
+/* Action column wrapper */
+.students-table td:last-child {
+    white-space: nowrap;
+}
+
+/* Edit link */
+.students-table td a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.students-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Delete button */
+.students-table td form {
+    display: inline;
+}
+
+.students-table td form button {
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.students-table td form button:hover {
+    background-color: #dc2626;
+}
+
+/* Edit button */
+.btn-actionedit {
+    background-color: #16a34a; /* green */
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.btn-actionedit .a{
+    text-decoration: none;
+}
+
+.btn-actionedit:hover {
+    background-color: #15803d;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* SUBJECTS VIEWING */
+
+.cursor-pointer { cursor: pointer; }
+.course-folder h2, .course-folder h3, .course-folder h4 {
+    margin: 5px 0;
+    font-weight: 600;
+}
+.table-section {
+    width: 90%;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+.table-section th, .table-section td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 8px;
+}
+
+
+
+
+
+.course-group a{
+    color: #5a6b5b;
+    text-decoration: none;
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 5px 0;
+    line-height: 1.5em;
+}
+
+li a {
+    text-decoration: none;
+    color: #0b3d0b;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+li a:hover {
+    color: #198754;
+}
+
+.cursor-pointer { cursor: pointer; }
+
+
+
+.course-tree {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-item {
+    margin-bottom: 12px;
+}
+
+.folder {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.year-list {
+    margin-left: 24px;
+    margin-top: 6px;
+}
+
+.year-folder {
+    display: block;
+    margin: 4px 0;
+    color: #198754;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.year-folder:hover {
+    text-decoration: underline;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+
+.drop-area {
+    border: 2px dashed #4CAF50;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-area:hover {
+    background: #f8fff8;
+}
+
+#fileName {
+    font-weight: 600;
+    color: #2ecc71;
+    margin-top: 10px;
+}

@@ -1,0 +1,178 @@
+/* Container */
+.admission-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.admission-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f855a; /* green accent */
+}
+
+/* Labels */
+.admission-form label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Inputs & Select */
+.admission-form input[type="text"],
+.admission-form input[type="email"],
+.admission-form input[type="date"],
+.admission-form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0; /* light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.admission-form input:focus,
+.admission-form select:focus {
+    border-color: #2f855a;
+    box-shadow: 0 0 5px rgba(47, 133, 90, 0.3);
+    outline: none;
+}
+
+/* Error messages */
+.admission-form .error {
+    color: #e53e3e; /* red */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Success message */
+.admission-form .success-message {
+    background-color: #c6f6d5;
+    border: 1px solid #2f855a;
+    padding: 10px;
+    border-radius: 5px;
+    color: #22543d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Submit Button */
+.admission-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2f855a;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.admission-form button:hover {
+    background-color: #276749;
+}
+
+
+.admission-form img {
+    height: 120px;
+    margin-bottom: -50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: center;
+    margin: 60px 20px 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    color: #2f855a; /* green accent */
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.header-text h1 span {
+    color: #2f855a; /* dark text for emphasis */
+}
+
+.header-text p {
+    font-size: 18px;
+    color: #4a5568; /* gray text */
+    margin-top: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 640px) {
+    .admission-form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+        .header-text h1 {
+        font-size: 28px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* increase space between columns */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 🔥 VERY IMPORTANT FIX */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* prevents overflow */
+}
+
+/* spacing for labels */
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.form-group.full-width {
+    grid-column: span 2; 
+}
+
+
+.inline-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.badge-success,
+.badge-warning,
+.badge-primary,
+.badge-danger,
+.badge-secondary {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* 🟢 Enrolled / Regular */
+.badge-success {
+    background-color: #28a745;
+}
+
+/* 🟡 Pending */
+.badge-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* 🔵 Approved */
+.badge-primary {
+    background-color: #007bff;
+}
+
+/* 🔴 Rejected */
+.badge-danger {
+    background-color: #dc3545;
+}
+
+/* ⚪ Default */
+.badge-secondary {
+    background-color: #6c757d;
+}
